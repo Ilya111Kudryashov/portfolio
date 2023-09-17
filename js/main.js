@@ -52,3 +52,26 @@ btnDarkMode.onclick=function(){
         localStorage.setItem('darkMode', 'light');
     }
 }
+
+// функция для получения или установки значения в локальном хранилище
+function getOrSetLocalStorage(key, initialValue){
+    const value=localStorage.getItem(key);
+    if(value===null){
+        localStorage.setItem(key,initialValue);
+        return initialValue;
+    }
+    return parseInt(value);
+}
+
+// увеличиваем счетчик посещений
+let totalVisits=getOrSetLocalStorage('totalVisits',0)+1;
+localStorage.setItem('totalVisits',totalVisits);
+document.querySelector('.totalVisits').textContent=totalVisits;
+
+// проеряем,была ли посещена страница ранее
+let uniqueVisits=getOrSetLocalStorage('uniqueVisits',0);
+if(uniqueVisits===0){
+    uniqueVisits=1;
+    localStorage.setItem('uniqueVisits',uniqueVisits);
+}
+document.querySelector('.uniqueVisits').textContent=uniqueVisits;
