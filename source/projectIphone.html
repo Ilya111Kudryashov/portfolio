@@ -22,14 +22,14 @@
                         <img src="../images/icons/sun.svg" alt="lightMode" class="dark-mode-btn__icon">
                         <img src="../images/icons/moon.svg" alt="nightMode" class="dark-mode-btn__icon">
                     </button>
-                    
+
                     <button class="menu-btn" type="button">
                         <span class="btn__line"></span>
                         <span class="btn__line"></span>
                         <span class="btn__line"></span>
                         <span class="btn__line"></span>
                     </button>
-                    
+
                     <ul class="menu__list">
                         <li class="menu__list--item">
                             <a class="menu-list__link menu-list__link--active" href="../source/index.html">Projects</a>
@@ -54,9 +54,11 @@
                     </h1>
                     <a href="https://ilya111kudryashov.github.io/iphone/source/index.html" target="_blank">
                         <p class="project-details__help">click to open the page</p>
-                        <img src="./../images/projects/iphone-bg.png" class="project-details__img">
-                        </img>
-                        
+                        <picture>
+                            <source srcset="./../images/projects/opti/iphone-bg.avif" type="image/avif">
+                            <source srcset="./../images/projects/opti/iphone-bg.webp" type="image/webp">
+                            <img src="./../images/projects/iphone-bg.png" class="project-details__img"></img>
+                        </picture>
                     </a>
                     <div class="project-details__descr">
                         <p class="text">Skills: HTML, CSS, JavaScript</p>
