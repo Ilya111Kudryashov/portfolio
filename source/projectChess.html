@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="menu">
+                    <a class="menu__title" href="../source/index.html">First <span>portfolio</span></a>
+                    <button class="dark-mode-btn ">
+                        <img src="../images/icons/sun.svg" alt="lightMode" class="dark-mode-btn__icon">
+                        <img src="../images/icons/moon.svg" alt="nightMode" class="dark-mode-btn__icon">
+                    </button>
+                    
+                    <button class="menu-btn" type="button">
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                        <span class="btn__line"></span>
+                    </button>
+                    
+                    <ul class="menu__list">
+                        <li class="menu__list--item">
+                            <a class="menu-list__link menu-list__link--active" href="../source/index.html">Projects</a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a class="menu-list__link" href="../source/skills.html">Skills</a>
+                        </li>
+                        <li class="menu__list--item">
+                            <a class="menu-list__link" href="../source/contacts.html">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="project">
+            <div class="container">
+                <div class="project-details">
+                    <h1 class="section__title">
+                        Club 4 horse
+                    </h1>
+                    <a href="https://ilya111kudryashov.github.io/club4horse/" target="_blank">
+                        <p class="project-details__help">click to open the page</p>
+                        <picture>
+                            <source srcset="./../images/projects/opti/chess-bg.avif" type="image/avif">
+                            <source srcset="./../images/projects/opti/chess-bg.webp" type="image/webp">
+                            <img src="./../images/projects/chess-bg.png" class="project-details__img"></img>
+                        </picture>
+                    </a>
+                    <div class="project-details__descr">
+                        <p class="text">Skills: HTML, CSS(scss), JavaScript, swiper.js, animation, gulp, responsive</p>
+                    </div>
+                    <a href="https://github.com/Ilya111Kudryashov/club4horse" class="btn-outline" target="_blank">
+                        <img src="../images/icons/gitHub-black.svg" alt="">
+                        GitHub repository
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://vk.com/id28050301" class="social__item--link">
+                        <img src="../images/icons/vk.svg" alt="" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#!" class="social__item--link">
+                        <img src="../images/icons/instagram.svg" alt="" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#!" class="social__item--link">
+                        <img src="../images/icons/twitter.svg" alt="" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="https://github.com/Ilya111Kudryashov" class="social__item--link">
+                        <img src="../images/icons/gitHub.svg" alt="" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#!" class="social__item--link">
+                        <img src="../images/icons/linkedIn.svg" alt="" class="social__img">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__copy">© 2023 Ilya</div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
