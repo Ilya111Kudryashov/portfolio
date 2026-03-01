@@ -373,8 +373,36 @@ a{
 .dark-mode-btn__icon{
     position: relative;
 }
-
-
+.info__list{
+    margin: 10px 0;
+    display: grid;
+    gap: 10px;
+}
+.info__list li{
+    position: relative;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.info__list li::before{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent);
+    left: 0;
+    top: 8px;
+    border-radius: 50%;
+}
+.subtitle{
+    font-size: 24px;
+    margin: 16px 0;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.about__block p+p{
+    margin-top: 10px;
+}
 /* media */
 @media(max-width:1200px){
     .project-inner{
